@@ -1,0 +1,25 @@
+<p>componenet-directive works!!</p>
+<!---In Angular Directive are classified in three following categories-->
+<!--1.Component Directive(Directive with own templates)--->
+<!--2.Structural Directive(Change DOM by adding or removal of elelment)-->
+<!--3.Attributeb Directive(Change apperence or behavoir of DOM)-->
+
+<!--1.Component Directive-->
+
+<h2>This is component Directive Example</h2>
+<button (click)="myButton()">Click me!!</button>
+
+<!--2.Structural Directive-->
+<h2>List of Employees</h2>
+<!--ngFor in Angular-->
+<ul *ngFor="let emp of emps">
+    <li>{{emp.name}}</li>
+    <li>{{emp.age}}</li>
+</ul>
+
+<h2>ngIf in Angular</h2>
+<div *ngIf="myngIf">Hello If here</div>
+
+<!--3.Attribute Directive-->
+<h2>This is ngStyle Example</h2>
+<p [ngStyle]="{'color':'green','font-weight':'bold'}">I am ng style here</p>
