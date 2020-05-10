@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponenetDirectiveComponent } from './Directive/componenet-directive/componenet-directive.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
-
+import {FormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -12,10 +12,12 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     AppComponent,
     ComponenetDirectiveComponent,
     TwoWayDataBindingComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
