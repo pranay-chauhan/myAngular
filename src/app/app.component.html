@@ -1,5 +1,22 @@
-<h1>This is the My Component Directive</h1>
-<app-componenet-directive></app-componenet-directive>
-<app-two-way-data-binding></app-two-way-data-binding><br/>
-<app-pipes></app-pipes>
-<router-outlet></router-outlet>
+
+<ul *ngFor="let val of people; let i=index;let o=odd;let e=even">
+    <li>{{i}}</li>
+   <li>The name of people is ==={{val.name}}==={{o}}=={{e}}</li>
+   <li>The age of people is ==={{val.age}}</li>
+</ul>
+
+<h1>ngStyle in Angular</h1>
+<ul *ngFor="let val of people">
+    <li [ngStyle]="{'color':getColor(val.desc)}">{{val.desc}}</li>
+</ul>
+
+<h1>ngClass in Angular</h1>
+<h3 [ngClass]="'one four'">ngClass with String</h3>
+
+<h3 [ngClass]="['one','four']">ngClass with array</h3>
+
+<p [ngClass]="{'one':true,'four':false}">ngClass as a Object</p>
+
+<div [ngClass]="getClassCss('mode')">
+    Using as a component method
+</div>
