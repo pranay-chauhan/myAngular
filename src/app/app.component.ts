@@ -6,6 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  name:string ='Mohan Kumar'
   people: any[] = [
     {
       "name": "Douglas  Pace", "age":30,"desc":'TL'
