@@ -7,6 +7,7 @@ import { Component} from '@angular/core';
 })
 export class AppComponent {
   name:string ='Mohan Kumar'
+  headline:boolean = false;
   people: any[] = [
     {
       "name": "Douglas  Pace", "age":30,"desc":'TL'
@@ -24,6 +25,10 @@ export class AppComponent {
       "name": "Cook  Tyson", "age":34,"desc":'Business Analyst'
     }
   ];
+  showConsole(){
+    console.log("Hello User");
+    this.headline = true;
+  }
   getColor(desc){
     switch(desc){
       case "TL":return 'green';
