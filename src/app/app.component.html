@@ -30,3 +30,7 @@
 
 <h3 *ngIf="headline">Event Binding</h3>
 <button (click)="showConsole()">Click</button>
+
+
+<h3>Two way Data Binding</h3>
+Enter your Name:<input type="text" [(ngModel)]="data"/>{{data}}

@@ -8,6 +8,7 @@ import { Component} from '@angular/core';
 export class AppComponent {
   name:string ='Mohan Kumar'
   headline:boolean = false;
+  data:any='My Study'
   people: any[] = [
     {
       "name": "Douglas  Pace", "age":30,"desc":'TL'
