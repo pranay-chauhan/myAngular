@@ -8,22 +8,24 @@ import { Component} from '@angular/core';
 export class AppComponent {
   name:string ='Mohan Kumar'
   headline:boolean = false;
-  data:any='My Study'
+  data:any='My Study';
+  dob:any = new Date(1992,7,12);
+  salary:number = 45000
   people: any[] = [
     {
-      "name": "Douglas  Pace", "age":30,"desc":'TL'
+      "name": "douglas  pace", "age":30,"desc":'TL','dob':'03/aug/1992'
     },
     {
-      "name": "Mcleod  Mueller", "age":23,"desc":'SE'
+      "name": "mcleod  mueller", "age":23,"desc":'SE','dob':'22/sept/1996'
     },
     {
-      "name": "Day  Meyers", "age":56,"desc":'Consultant'
+      "name": "may meyers", "age":56,"desc":'Consultant','dob':'12/oct/1956'
     },
     {
-      "name": "Aguirre  Ellis", "age":25,"desc":'Tester'
+      "name": "aguirre  ellis", "age":25,"desc":'Tester','dob':'20/feb/1997'
     },
     {
-      "name": "Cook  Tyson", "age":34,"desc":'Business Analyst'
+      "name": "cook  tyson", "age":34,"desc":'Business Analyst','dob':'19/mar/1987'
     }
   ];
   showConsole(){

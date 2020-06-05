@@ -34,3 +34,28 @@
 
 <h3>Two way Data Binding</h3>
 Enter your Name:<input type="text" [(ngModel)]="data"/>{{data}}
+
+
+<h3>Pipes in angular</h3>
+<table border="1">
+    <tr>
+        <th>Name</th>
+         <th>Age</th>
+         <th>Designation</th>
+         <th>Date of Birth</th>
+    </tr>
+    <tr *ngFor="let person of people">
+        <td>{{person.name | uppercase}}</td>
+        <td>{{person.age}}</td>
+        <td>{{person.desc}}</td>
+        <td>{{person.dob}}</td>
+    </tr>
+</table>
+
+<h3>Parameterized Pipes</h3>
+<p>{{dob}}</p><br/>
+<p>Medium:{{dob | date:'medium'}}</p><br/>
+<p> Special Formate:{{dob| date:'dd/MM/yyyy'}}</p><br>
+<p>Medium Time:{{dob | date:'mediumTime'}}</p><br/>
+<p>{{salary | currency:'USD'}}</p>
+
