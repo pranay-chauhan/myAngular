@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router:Router){}
+  
   name:string ='Mohan Kumar'
   headline:boolean = false;
   data:any='My Study';

@@ -7,6 +7,8 @@ import { EmploginComponent } from './compnay/emplogin/emplogin.component';
 import { MypipePipe } from './mypipe.pipe';
 import { StudentComponent } from './student/student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     MypipePipe,
     StudentComponent,
     StudentDetailsComponent,
+    PageNotFoundComponent,
+    StudentRegistrationComponent,
 
   ],
   imports: [
