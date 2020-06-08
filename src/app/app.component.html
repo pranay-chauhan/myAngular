@@ -42,12 +42,14 @@ Enter your Name:<input type="text" [(ngModel)]="data"/>{{data}}
         <th>Name</th>
          <th>Age</th>
          <th>Designation</th>
+         <th>Gender</th>
          <th>Date of Birth</th>
     </tr>
     <tr *ngFor="let person of people">
         <td>{{person.name | uppercase}}</td>
         <td>{{person.age}}</td>
         <td>{{person.desc}}</td>
+        <td>{{person.gender}}</td>
         <td>{{person.dob}}</td>
     </tr>
 </table>
@@ -59,3 +61,10 @@ Enter your Name:<input type="text" [(ngModel)]="data"/>{{data}}
 <p>Medium Time:{{dob | date:'mediumTime'}}</p><br/>
 <p>{{salary | currency:'USD'}}</p>
 
+<h3>Routing In Angular</h3>
+<a [routerLink] = "['/student']">Student</a>||||
+<a [routerLink] = "['/studentDetails']">Student Details</a>
+<div>
+    <router-outlet> 
+    </router-outlet>
+</div>
