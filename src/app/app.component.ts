@@ -1,17 +1,18 @@
 import { Component} from '@angular/core';
 import { Router } from '@angular/router';
-
+import {NewServiceService} from './new-service.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[NewServiceService]
 })
 export class AppComponent {
   
   name:string ='Mohan Kumar'
   headline:boolean = false;
   data:any='My Study';
- 
+  text:string
   dob:any = new Date(1992,7,12);
   salary:number = 45000
   people: any[] = [
@@ -63,8 +64,11 @@ export class AppComponent {
     }
     return cssClass
   }
-  constructor(){
-    console.log('This is Module component')
+  constructor(private _newService:NewServiceService){
+    
+  }
+  ngOnInit(){
+    this.text = this._newService.display()
   }
   title = 'my-dream-app';
 }
