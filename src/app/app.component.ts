@@ -12,6 +12,7 @@ export class AppComponent {
   name:string ='Mohan Kumar'
   headline:boolean = false;
   data:any='My Study';
+  data1:any
   text:string
   dob:any = new Date(1992,7,12);
   salary:number = 45000
@@ -32,6 +33,7 @@ export class AppComponent {
       "name": "cook  tyson", 'gender':'male',"age":34,"desc":'Business Analyst','dob':'19/mar/1987'
     }
   ];
+
   showConsole(){
     console.log("Hello User");
     this.headline = true;
@@ -69,6 +71,7 @@ export class AppComponent {
   }
   ngOnInit(){
     this.text = this._newService.display()
+    this.data1 = this._newService.people
   }
   title = 'my-dream-app';
 }
