@@ -9,6 +9,8 @@ import { StudentComponent } from './student/student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -20,12 +22,14 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
     StudentDetailsComponent,
     PageNotFoundComponent,
     StudentRegistrationComponent,
+    ChildComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

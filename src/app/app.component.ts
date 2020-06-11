@@ -8,7 +8,7 @@ import {NewServiceService} from './new-service.service'
   providers:[NewServiceService]
 })
 export class AppComponent {
-  
+  inputVariable:string ='Hi I am your parent'
   name:string ='Mohan Kumar'
   headline:boolean = false;
   data:any='My Study';
@@ -74,4 +74,8 @@ export class AppComponent {
     this.data1 = this._newService.people
   }
   title = 'my-dream-app';
+
+  getData(value){
+    console.log(value)
+  }
 }

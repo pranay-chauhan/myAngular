@@ -76,3 +76,9 @@ Enter your Name:<input type="text" [(ngModel)]="data"/>{{data}}
 <ul *ngFor="let data of data1">
     <li>{{data.name}}</li>
 </ul>
+
+
+<h3>@Input decorator</h3>
+<div>
+    <app-child [myInput]="inputVariable" (myOutput)="getData($event)"></app-child>
+</div>
